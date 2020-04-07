@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		55930270243CCAA3008D71F3 /* swift_algorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55930266243CCAA3008D71F3 /* swift_algorithms.framework */; };
-		55930275243CCAA3008D71F3 /* swift_algorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930274243CCAA3008D71F3 /* swift_algorithmsTests.swift */; };
-		55930277243CCAA3008D71F3 /* swift_algorithms.h in Headers */ = {isa = PBXBuildFile; fileRef = 55930269243CCAA3008D71F3 /* swift_algorithms.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55930281243CCBA1008D71F3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930280243CCBA1008D71F3 /* BinarySearch.swift */; };
+		55930282243CCBA1008D71F3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930280243CCBA1008D71F3 /* BinarySearch.swift */; };
+		55930284243CCBE1008D71F3 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930283243CCBE1008D71F3 /* BinarySearchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +25,11 @@
 
 /* Begin PBXFileReference section */
 		55930266243CCAA3008D71F3 /* swift_algorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_algorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55930269243CCAA3008D71F3 /* swift_algorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_algorithms.h; sourceTree = "<group>"; };
 		5593026A243CCAA3008D71F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5593026F243CCAA3008D71F3 /* swift-algorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-algorithmsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		55930274243CCAA3008D71F3 /* swift_algorithmsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_algorithmsTests.swift; sourceTree = "<group>"; };
 		55930276243CCAA3008D71F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55930280243CCBA1008D71F3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		55930283243CCBE1008D71F3 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +72,8 @@
 		55930268243CCAA3008D71F3 /* swift-algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				55930269243CCAA3008D71F3 /* swift_algorithms.h */,
 				5593026A243CCAA3008D71F3 /* Info.plist */,
+				55930280243CCBA1008D71F3 /* BinarySearch.swift */,
 			);
 			path = "swift-algorithms";
 			sourceTree = "<group>";
@@ -80,8 +81,8 @@
 		55930273243CCAA3008D71F3 /* swift-algorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
-				55930274243CCAA3008D71F3 /* swift_algorithmsTests.swift */,
 				55930276243CCAA3008D71F3 /* Info.plist */,
+				55930283243CCBE1008D71F3 /* BinarySearchTests.swift */,
 			);
 			path = "swift-algorithmsTests";
 			sourceTree = "<group>";
@@ -93,7 +94,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55930277243CCAA3008D71F3 /* swift_algorithms.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,7 @@
 				TargetAttributes = {
 					55930265243CCAA3008D71F3 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					5593026E243CCAA3008D71F3 = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55930281243CCBA1008D71F3 /* BinarySearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55930275243CCAA3008D71F3 /* swift_algorithmsTests.swift in Sources */,
+				55930282243CCBA1008D71F3 /* BinarySearch.swift in Sources */,
+				55930284243CCBE1008D71F3 /* BinarySearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +342,7 @@
 		5593027B243CCAA3008D71F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -356,6 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.felipeweber.swift-algorithms";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -363,6 +368,7 @@
 		5593027C243CCAA3008D71F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -387,6 +393,7 @@
 		5593027E243CCAA3008D71F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QG5EGL3K8;
@@ -405,6 +412,7 @@
 		5593027F243CCAA3008D71F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 9QG5EGL3K8;
