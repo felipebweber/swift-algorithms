@@ -11,6 +11,8 @@
 		55930281243CCBA1008D71F3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930280243CCBA1008D71F3 /* BinarySearch.swift */; };
 		55930282243CCBA1008D71F3 /* BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930280243CCBA1008D71F3 /* BinarySearch.swift */; };
 		55930284243CCBE1008D71F3 /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55930283243CCBE1008D71F3 /* BinarySearchTests.swift */; };
+		55D8B604244F744E00203C2F /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8B603244F744E00203C2F /* QuickSort.swift */; };
+		55D8B607244F7ADA00203C2F /* QuickSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D8B605244F7ADA00203C2F /* QuickSortTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,8 @@
 		55930276243CCAA3008D71F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55930280243CCBA1008D71F3 /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		55930283243CCBE1008D71F3 /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
+		55D8B603244F744E00203C2F /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		55D8B605244F7ADA00203C2F /* QuickSortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSortTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				5593026A243CCAA3008D71F3 /* Info.plist */,
 				55930280243CCBA1008D71F3 /* BinarySearch.swift */,
+				55D8B603244F744E00203C2F /* QuickSort.swift */,
 			);
 			path = "swift-algorithms";
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 			children = (
 				55930276243CCAA3008D71F3 /* Info.plist */,
 				55930283243CCBE1008D71F3 /* BinarySearchTests.swift */,
+				55D8B605244F7ADA00203C2F /* QuickSortTests.swift */,
 			);
 			path = "swift-algorithmsTests";
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55930281243CCBA1008D71F3 /* BinarySearch.swift in Sources */,
+				55D8B604244F744E00203C2F /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +213,7 @@
 			files = (
 				55930282243CCBA1008D71F3 /* BinarySearch.swift in Sources */,
 				55930284243CCBE1008D71F3 /* BinarySearchTests.swift in Sources */,
+				55D8B607244F7ADA00203C2F /* QuickSortTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
